@@ -18,8 +18,7 @@ header {
 .header_logo {
     text-align: center;
     width: 155px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .nav_main {
@@ -35,8 +34,8 @@ header {
     
 }
 .nav_item {
-    padding: 10px 10px 13px;
-    margin: 0;
+    padding: 0 10px;
+    margin: 13px 0;
 }
 
 .nav_link {
@@ -79,6 +78,7 @@ main {
         display: flex;
         margin: 0 auto;
         text-align: center;
+        padding-top: 200px;
     }
 
     .nav_main {

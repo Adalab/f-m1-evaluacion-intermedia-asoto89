@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: 'Rubik', sans-serif;
+    background-color:#3CDBC0; 
+}
+
+header {
+    background-color: #fff;
+}
+
+#header_main {
+    padding: 0 auto;
+    width: 100%;
+}
+
+.header_logo {
+    text-align: center;
+    width: 155px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.nav_item {
+    padding: 10px 20px 13px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+main {
+    display: flex;
+    align-content: center;
+}
+
+
+.main_text {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

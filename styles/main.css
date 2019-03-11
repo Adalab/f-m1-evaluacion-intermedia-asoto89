@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    background-color:#3CDBC0; 
+    background-color:#3CDBC0;
+    box-sizing: border-box;
 }
 
 header { 
@@ -10,14 +11,18 @@ header {
     left: 0px;
     background-color: #fff;
     text-align: center;
-    padding: 10px auto;
-    width: 100vw;
+    padding: 10px auto 0;
+    width: 100%;
 }
 
 .header_logo {
     text-align: center;
     width: 155px;
-    margin: 10px auto;
+    margin: 10px 0;
+}
+
+.nav_main {
+    align-self: center;
 }
 
 .nav_list {
@@ -25,15 +30,19 @@ header {
     justify-content: center;
     list-style: none;
     padding: 0;
+    
 }
 .nav_item {
-    padding: 10px 20px 13px;
+    padding: 10px 10px 13px;
+    margin: 0;
 }
 
 .nav_link {
     text-decoration: none;
     color: #4a4a4a;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 main {
@@ -43,20 +52,33 @@ main {
 
 
 .main_text {
-    display: flex;
     font-size: 30px;
     color: white;
     font-weight: bold;
     text-align: center;
-    padding: 250px 100px;
+    padding: 250px 0;
+    margin: auto;
+    width: 200px;
 }
 
 @media (min-width: 768px) {
     header {
         display: flex;
         justify-content: space-between;
+        padding: 0 30px;
     }
 
     .header_logo {
         text-align: left;
+    }
+
+    .main_text {
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .nav_main {
+        padding-right: 30px; 
+    }
 }

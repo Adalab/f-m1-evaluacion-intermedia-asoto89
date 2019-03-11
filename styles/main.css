@@ -1,24 +1,23 @@
 body {
     margin: 0;
-    width: 100vw;
     font-family: 'Rubik', sans-serif;
     background-color:#3CDBC0; 
 }
 
-header {
+header { 
+    position: fixed;
+    top: 0px;
+    left: 0px;
     background-color: #fff;
-}
-
-#header_main {
-    padding: 0 auto;
-    width: 100%;
+    text-align: center;
+    padding: 10px auto;
+    width: 100vw;
 }
 
 .header_logo {
     text-align: center;
     width: 155px;
-    margin: 0;
-    padding: 0;
+    margin: 10px auto;
 }
 
 .nav_list {
@@ -34,6 +33,7 @@ header {
 .nav_link {
     text-decoration: none;
     color: #4a4a4a;
+    font-size: 16px;
 }
 
 main {
@@ -48,4 +48,15 @@ main {
     color: white;
     font-weight: bold;
     text-align: center;
+    padding: 250px 100px;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_logo {
+        text-align: left;
 }
